@@ -30,7 +30,7 @@ pipeline {
             steps {
                 // Start the JAR application
                 sh 'mvn exec:java -Dexec.mainClass=com.example.App'
-                cat destination.txt
+                sh cat 'destination.txt'
             }
         }
 
